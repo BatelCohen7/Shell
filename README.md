@@ -4,9 +4,9 @@ Task 2 : Linux practice - Operating systems course.</div>
 The task is made of 3 parts: file operations, dynamic libraries, and basic shell.</div>
 ### **Part A : file operations**</div>
 We implemented 2 tools:</div>
-1. **CMP -** The tool compare two files, and returns "0" if they are equal, and "1" if not (return INT). Besides returning an int value, the tool prints "equals" or "distinct" with the v flag. It supports the -i flag, meaning "ignore cases," so "AAA" and "aaa" are the same.</div>
+1. **CMP-** The tool compare two files, and returns "0" if they are equal, and "1" if not (return INT). Besides returning an int value, the tool prints "equals" or "distinct" with the v flag. It supports the -i flag, meaning "ignore cases," so "AAA" and "aaa" are the same.</div>
 </div>
-2.  **COPY -** In this tool, it copies a file to a different location and/or name.</div>
+2. **COPY-** In this tool, it copies a file to a different location and/or name.</div>
 The tool returns "0" on success, or "1" on failure (it returns INT).
 When a file does not exist, the tool creates a new one. However, if a file already exists, it will not overwrite it.</div>
 Using the v flag, the tool will output "*success*" if the file is copied, "*target file exists*" if it is, or "*general failure*" on other problems (in addition to the returned INT value).
