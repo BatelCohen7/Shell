@@ -24,26 +24,25 @@ We implemented two coding libraries:</div>
 The libraries support `encoding.c` and `decoding.c` methods. </div>
 
 ### **Part C : basic shell** </div>
-Shell is a program that provides a user interface to interact with the operating system.</div> It interprets and executes commands entered by the user, and can also run scripts containing a series of commands. </div>
-The shell facilitates inter-process communication (IPC) and process management. </div>
-This stshell program supports running system commands using `fork`, `exec`, and `wait`, handles stopping a running command with **Ctrl+C** without killing the shell, supports output redirection with **>** and **>>**, allows piping with** | **for up to 2 pipes, and can be stopped using the `exit` command. </div>
+Shell is a program that provides a user interface to interact with the operating system. It interprets and executes commands entered by the user, and can also run scripts containing a series of commands. </div>  The shell facilitates inter-process communication (IPC) and process management. </div>
+This stshell program supports running system commands using `fork`, `exec`, and` wait`, handles stopping a running command with **Ctrl+C** without killing the shell, supports output redirection with **>** and **>>**, allows piping with** | **for up to 2 pipes, and can be stopped using the `exit` command. </div>
 </div>
 **Description of the order in which these commands/processes are typically used:** </div>
-- **fork:** This system call creates a new child process by duplicating the current process.</div> The child process is an exact copy of the parent process, except for a few values, such as the process ID.</div>
-- **pipe:** A pipe is a form of IPC that allows two processes to communicate with each other. It creates a unidirectional data channel. One process writes data to the pipe, and the other process reads from it.</div>
-- **File descriptor:** A file descriptor is a non-negative integer that serves as an index to access an open file or pipe. When a pipe is created, it returns two file descriptors: one for reading (usually 0) and one for writing (usually 1).</div>
-- **dup2:** This system call duplicates a file descriptor, making the new file descriptor point to the same file or pipe as the old one. It is often used to redirect standard input, output, or error streams of a process.</div>
-- **execvp:** This function replaces the current process image with a new process image specified by the file path. It also takes an array of arguments to pass to the new program.</div>
-- **wait:** This system call suspends the current process until one of its child processes terminates. It allows the parent process to collect the exit status of the child.</div>
+- **fork:** This system call creates a new child process by duplicating the current process.</div> The child process is an exact copy of the parent process, except for a few values, such as the process ID. </div>
+- **pipe:** A pipe is a form of IPC that allows two processes to communicate with each other. It creates a unidirectional data channel. One process writes data to the pipe, and the other process reads from it. </div>
+- **File descriptor:** A file descriptor is a non-negative integer that serves as an index to access an open file or pipe. When a pipe is created, it returns two file descriptors: one for reading (usually 0) and one for writing (usually 1). </div>
+- **dup2:** This system call duplicates a file descriptor, making the new file descriptor point to the same file or pipe as the old one. It is often used to redirect standard input, output, or error streams of a process. </div>
+- **execvp:** This function replaces the current process image with a new process image specified by the file path. It also takes an array of arguments to pass to the new program. </div>
+- **wait:** This system call suspends the current process until one of its child processes terminates. It allows the parent process to collect the exit status of the child. </div>
 </div>
-## How to run?</div>
-- Run the compering files program. : `./cmp<file1> <file2> [-iv]`</div>
-- Run the copying files program : `./copy<src> <dest> [-fv]`</div>
-- Run the encoder program with codecA : `./encode codecA "text"`</div>
-- Run the encoder program with codecB :` ./encode codecB "text"` </div>
-- Run the decoder program with codecA :` ./decode codecA "text"`</div>
-- Run the decoder program with codecB : `./decode codecB "text"`</div>
-- Run the students shell: `./stshell`</div>
+## How to run? </div>
+- Run the compering files program. : `./cmp<file1> <file2> [-iv]` </div>
+- Run the copying files program : `./copy<src> <dest> [-fv]` </div>
+- Run the encoder program with codecA : `./encode codecA "text"` </div>
+- Run the encoder program with codecB :` ./encode codecB "text"`  </div>
+- Run the decoder program with codecA :` ./decode codecA "text"` </div>
+- Run the decoder program with codecB : `./decode codecB "text"` </div>
+- Run the students shell: `./stshell` </div>
 </div>
 ## Author: </div>
 [Batel Cohen Yerushalmi](https://github.com/BatelCohen7 "Batel Cohen Yerushalmi") **&** [Dor Harizi](https://github.com/DorHarizi "Dor Harizi")
