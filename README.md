@@ -15,7 +15,7 @@ Thats tools implement in </div>
 ### **Part B : dynamic libraries**</div>
 We implemented two coding libraries:</div>
 1. `codecA.c:` covers all lowercase characters to uppercase, and all uppercase to lowercase, all other characters will remain unchanged.</div>
-2.  `codecB.c:` converts all characters to the next 3rd character (adding a number of 3 to ascii val).
+2.  `codecB.c:` converts all characters to the next 3rd character (adding a number of 3 to ascii val).</div>
 The libraries support `encoding.c` and `decoding.c` methods.</div>
 
 ### Part C : basic shell
