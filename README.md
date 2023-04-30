@@ -44,6 +44,12 @@ This stshell program supports running system commands using `fork`, `exec`, and`
 - **wait:** This system call suspends the current process until one of its child processes terminates. It allows the parent process to collect the exit status of the child. </div>
 </div>
 
+## Building</div>
+1. Cloning the repo to local machine: ` git clone` https://github.com/DorHarizi/task2_opsys.git </div>
+2. Building all the necessary files & the main programs:  `make all` </div>
+3. Export shared libraries : `export LD_LIBRARY_PATH="."` </div>
+</div>
+
 ## How to run? </div>
 - Run the compering files program. : `./cmp<file1> <file2> [-iv]` </div>
 - Run the copying files program : `./copy<src> <dest> [-fv]` </div>
