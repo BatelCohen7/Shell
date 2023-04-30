@@ -15,23 +15,15 @@ Thats tools implement in </div>
 
 ### **Part B : dynamic libraries**</div>
 We implemented two coding libraries:</div>
-1. ```c
-codecA.c
-``` : covers all lowercase characters to uppercase, and all uppercase to lowercase, all other characters will remain unchanged.</div>
-2.  ```c
-codecB.c
-``` : converts all characters to the next 3rd character (adding a number of 3 to ascii val).
-The libraries support ```c
-encoding.c
-``` and ```c
-decoding.c
-``` methods.</div>
+1. `codecA.c:` covers all lowercase characters to uppercase, and all uppercase to lowercase, all other characters will remain unchanged.</div>
+2.  `codecB.c:` converts all characters to the next 3rd character (adding a number of 3 to ascii val).
+The libraries support `encoding.c` and `decoding.c` methods.</div>
 
 ### Part C : basic shell
 Shell is a program that provides a user interface to interact with the operating system. It interprets and executes commands entered by the user, and can also run scripts containing a series of commands.</div>  The shell facilitates inter-process communication (IPC) and process management.</div>
 This stshell program supports running system commands using `fork`, `exec`, and` wait`, handles stopping a running command with **Ctrl+C** without killing the shell, supports output redirection with **>** and **>>**, allows piping with** | **for up to 2 pipes, and can be stopped using the `exit` command.</div>
 </div>
-**Here's a description of the order in which these commands/processes are typically used:** </div>
+**Description of the order in which these commands/processes are typically used:** </div>
 **fork:** This system call creates a new child process by duplicating the current process.</div> The child process is an exact copy of the parent process, except for a few values, such as the process ID.</div>
 **pipe:** A pipe is a form of IPC that allows two processes to communicate with each other. It creates a unidirectional data channel. One process writes data to the pipe, and the other process reads from it.</div>
 **File descriptor:** A file descriptor is a non-negative integer that serves as an index to access an open file or pipe. When a pipe is created, it returns two file descriptors: one for reading (usually 0) and one for writing (usually 1).</div>
