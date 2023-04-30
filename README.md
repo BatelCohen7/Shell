@@ -15,8 +15,8 @@ Thats tools implement in </div>
 
 ### **Part B : dynamic libraries**</div>
 We implemented two coding libraries:</div>
-1. `codecA.c:` covers all lowercase characters to uppercase, and all uppercase to lowercase, all other characters will remain unchanged.</div>
-2.  `codecB.c:` converts all characters to the next 3rd character (adding a number of 3 to ascii val).
+1. `codecA.c:` covers all lowercase characters to uppercase, and all uppercase to lowercase, all other characters will remain unchanged. </div>
+2.  `codecB.c:` converts all characters to the next 3rd character (adding a number of 3 to ascii val). </div>
 The libraries support `encoding.c` and `decoding.c` methods.</div>
 
 ### Part C : basic shell
@@ -30,7 +30,7 @@ This stshell program supports running system commands using `fork`, `exec`, and`
 - **dup2:** This system call duplicates a file descriptor, making the new file descriptor point to the same file or pipe as the old one. It is often used to redirect standard input, output, or error streams of a process.</div>
 - **execvp:** This function replaces the current process image with a new process image specified by the file path. It also takes an array of arguments to pass to the new program.</div>
 - **wait:** This system call suspends the current process until one of its child processes terminates. It allows the parent process to collect the exit status of the child.</div>
-
+</div>
 ## How to run?</div>
 - Run the compering files program. : `./cmp<file1> <file2> [-iv]`</div>
 - Run the copying files program : `./copy<src> <dest> [-fv]`</div>
@@ -40,5 +40,5 @@ This stshell program supports running system commands using `fork`, `exec`, and`
 - Run the decoder program with codecB : `./decode codecB "text"`</div>
 - Run the students shell: `./stshell`</div>
 </div>
-## Author:
-[Batel Cohen Yerushalmi](https://github.com/BatelCohen7 "Batel Cohen Yerushalmi") & [Dor Harizi](https://github.com/DorHarizi "Dor Harizi")
+## Author: </div>
+[Batel Cohen Yerushalmi](https://github.com/BatelCohen7 "Batel Cohen Yerushalmi") **&** [Dor Harizi](https://github.com/DorHarizi "Dor Harizi")
